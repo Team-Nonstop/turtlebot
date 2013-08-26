@@ -3,8 +3,6 @@ project(turtlebot_bringup)
 
 find_package(catkin REQUIRED COMPONENTS)
 
-catkin_python_setup()
-
 catkin_package()
 
 install(
@@ -21,7 +19,15 @@ install(DIRECTORY launch
         DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
+install(DIRECTORY concert
+        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
+
 install(DIRECTORY param
+        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
+
+install(DIRECTORY icons
         DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
